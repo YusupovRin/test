@@ -54,7 +54,7 @@ router.put(
       }
     ),
 
-    check(`param1`, `Третье это число!`).isInt(),
+    check(`param1`, `Третье это число!`).isFloat(),
 
     check(`param2`, `Четвертое это число!`).isInt(),
 

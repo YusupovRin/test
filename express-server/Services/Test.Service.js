@@ -29,7 +29,8 @@ class TestService {
 
   async updateRowTest(id, bdate, bdatetime, param1, param2, param3) {
     const [updateRow] = await global.connectMySQL.execute(
-      `UPDATE test SET bdate = '${bdate}', bdatetime = '${bdatetime}', param1 = '${param1}', param2 = '${param2}', param3 = '${param3}' WHERE id = ${id}`
+      `UPDATE test SET bdate = ?, bdatetime = ?, param1 = ?, param2 = ?, param3 = ? WHERE id = ?`,
+      [bdate, bdatetime, param1, param2, param3, id]
     );
 
     if (updateRow[`affectedRows`]) return true;
