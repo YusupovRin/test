@@ -1,8 +1,9 @@
 import React from 'react';
+import moment from 'moment';
 
 import './ShowAllRows.Component.scss';
 
-const ShowAllRowsComponent = () => {
+const ShowAllRowsComponent = ({ rowsAllEntities }) => {
   return (
     <div className='ShowAllRowsComponent'>
       <div className='container'>
@@ -18,38 +19,19 @@ const ShowAllRowsComponent = () => {
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>ID</td>
-              <td>Дата</td>
-              <td>Время</td>
-              <td>PARAM 1</td>
-              <td>PARAM 2</td>
-              <td>PARAM 3</td>
-            </tr>
-            <tr>
-              <td>ID</td>
-              <td>Дата</td>
-              <td>Время</td>
-              <td>PARAM 1</td>
-              <td>PARAM 2</td>
-              <td>PARAM 3</td>
-            </tr>
-            <tr>
-              <td>ID</td>
-              <td>Дата</td>
-              <td>Время</td>
-              <td>PARAM 1</td>
-              <td>PARAM 2</td>
-              <td>PARAM 3</td>
-            </tr>
-            <tr>
-              <td>ID</td>
-              <td>Дата</td>
-              <td>Время</td>
-              <td>PARAM 1</td>
-              <td>PARAM 2</td>
-              <td>PARAM 3</td>
-            </tr>
+            {rowsAllEntities !== null &&
+              rowsAllEntities.map((row) => {
+                return (
+                  <tr key={row.id}>
+                    <td>{row.id}</td>
+                    <td>{moment(row.bdate).format('YYYY-MM-DD')}</td>
+                    <td>{moment(row.bdatetime).format('HH:mm:ss')}</td>
+                    <td>{row.param1}</td>
+                    <td>{row.param2}</td>
+                    <td>{row.param3}</td>
+                  </tr>
+                );
+              })}
           </tbody>
         </table>
       </div>
