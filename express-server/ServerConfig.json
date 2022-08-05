@@ -3,13 +3,8 @@
   "SERVER_START_ON_PORT": "7843",
   "SERVER_WORKING_ON_ADRESS": "http://localhost",
   "SERVER_MYSQL_SETTINGS": {
-<<<<<<< HEAD
-    "host": "10.39.0.219",
-    "user": "test",
-=======
     "host": "127.0.0.1",
     "user": "root",
->>>>>>> 1bcc544bd26dd03f9410676773736da2bdc634f2
     "database": "mio",
     "password": "root"
   }
