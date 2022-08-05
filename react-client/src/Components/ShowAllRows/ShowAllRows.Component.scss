@@ -1,0 +1,74 @@
+.ShowAllRowsComponent {
+  .container {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__table {
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+
+    thead {
+      width: 100%;
+
+      tr {
+        width: 100%;
+
+        th {
+          text-transform: uppercase;
+          width: 16.6%;
+          background-color: #0085ff;
+          padding-top: 25px;
+          padding-bottom: 25px;
+
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 135%;
+          /* or 24px */
+
+          color: #ffffff;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          text-align: center;
+          text-transform: uppercase;
+
+          font-family: 'Montserrat';
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 135%;
+          /* or 20px */
+
+          color: #000000;
+        }
+
+        &:hover {
+          td {
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 135%;
+            /* or 20px */
+
+            color: #ff005c;
+          }
+        }
+      }
+    }
+  }
+}

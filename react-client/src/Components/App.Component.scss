@@ -1,0 +1,14 @@
+.AppComponent {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  main {
+    flex: 1 1 auto;
+  }
+
+  &__show-data {
+    margin-top: 50px;
+  }
+}

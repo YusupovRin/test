@@ -1,0 +1,20 @@
+.HeaderComponent {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  background-color: #fcfcfc;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    font-size: 40px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+  }
+}

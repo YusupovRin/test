@@ -39,7 +39,8 @@ class TestService {
 
   async deleteRowTest(id) {
     let [deleteRow] = await global.connectMySQL.execute(
-      `DELETE FROM test WHERE id = ${id}`
+      `DELETE FROM test WHERE id = ?`,
+      [id]
     );
 
     if (deleteRow[`affectedRows`]) return true;

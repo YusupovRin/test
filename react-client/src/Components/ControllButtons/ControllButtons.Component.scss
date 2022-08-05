@@ -1,0 +1,66 @@
+.ControllButtonsComponent {
+  .container {
+    display: flex;
+    column-gap: 30px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  &__button-create {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 35px;
+    padding-right: 35px;
+    background-color: #ffffff;
+    border: 2px solid #0085ff;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #0085ff;
+
+    &:hover {
+      background-color: #ff005c;
+      box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.25);
+      border: 2px solid #ff005c;
+
+      color: #ffffff;
+
+      cursor: pointer;
+    }
+  }
+
+  &__button-update {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border: none;
+    background-color: #ff005c;
+    box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.25);
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+      border: 2px solid #0085ff;
+
+      color: #0085ff;
+
+      cursor: pointer;
+    }
+  }
+}
