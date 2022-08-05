@@ -19,7 +19,7 @@ const ShowAllRowsComponent = ({ rowsAllEntities }) => {
             </tr>
           </thead>
           <tbody>
-            {rowsAllEntities !== null &&
+            {rowsAllEntities !== null && rowsAllEntities.length ? (
               rowsAllEntities.map((row) => {
                 return (
                   <tr key={row.id}>
@@ -31,7 +31,12 @@ const ShowAllRowsComponent = ({ rowsAllEntities }) => {
                     <td>{row.param3}</td>
                   </tr>
                 );
-              })}
+              })
+            ) : (
+              <tr>
+                <td colspan='6'>Ничего не найдено</td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
