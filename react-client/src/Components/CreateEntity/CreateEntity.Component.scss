@@ -14,13 +14,22 @@
     box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
     padding-top: 35px;
     padding-bottom: 80px;
+
+    @media (max-width: 564px) {
+      width: 90%;
+    }
   }
 
   &__head {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 70.92198581560284%;
     margin-left: 124px;
+
+    @media (max-width: 768px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   &__title {
