@@ -8,6 +8,10 @@ const appService = async (setRowsAllEntities) => {
   // const { ok, status } = responseFetch;
   responseFetch = await responseFetch.json();
 
+  for (let index = 0; index < responseFetch.length; index++) {
+    responseFetch[index].param1 = responseFetch[index].param1.toFixed(3);
+  }
+
   setRowsAllEntities(responseFetch);
 };
 

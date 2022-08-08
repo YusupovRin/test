@@ -1,13 +1,21 @@
 .ControllButtonsComponent {
   .container {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 30px;
+    row-gap: 30px;
     background: #ffffff;
     box-shadow: 0px 0px 30px rgba(0, 133, 255, 0.15);
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+
+    @media (max-width: 768px) {
+      button {
+        width: 100%;
+      }
+    }
   }
 
   &__button-create {

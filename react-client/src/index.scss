@@ -4,6 +4,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  word-wrap: break-word;
+  // word-break: break-all;
+  white-space: nowrap;
 }
 
 html,
@@ -17,9 +20,19 @@ body,
 }
 
 .container {
-  width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
+  @media (min-width: 1200px) {
+    width: 1200px;
+  }
+  @media (max-width: 1200px) {
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    width: 98%;
+  }
 }
 
 // TOAST

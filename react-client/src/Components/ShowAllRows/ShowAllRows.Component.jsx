@@ -34,7 +34,7 @@ const ShowAllRowsComponent = ({ rowsAllEntities }) => {
               })
             ) : (
               <tr>
-                <td colspan='6'>Ничего не найдено</td>
+                <td colSpan='6'>Ничего не найдено</td>
               </tr>
             )}
           </tbody>

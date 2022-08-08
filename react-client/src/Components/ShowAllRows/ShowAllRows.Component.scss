@@ -6,6 +6,7 @@
     padding-right: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    overflow-y: auto;
   }
 
   &__table {
@@ -34,6 +35,11 @@
           /* or 24px */
 
           color: #ffffff;
+
+          @media (max-width: 1200px) {
+            padding-left: 30px;
+            padding-right: 30px;
+          }
         }
       }
     }
@@ -54,6 +60,11 @@
           /* or 20px */
 
           color: #000000;
+
+          @media (max-width: 1200px) {
+            padding-left: 30px;
+            padding-right: 30px;
+          }
         }
 
         &:hover {

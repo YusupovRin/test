@@ -7,8 +7,6 @@ const createEntityService = async (
   param2,
   param3
 ) => {
-  console.log(bdate, bdatetime, param1, param2, param3);
-
   let responseFetch = await fetch(`${CONFIG.URL_BACKEND}/api/test/create`, {
     method: 'POST',
     headers: {
