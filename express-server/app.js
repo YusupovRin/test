@@ -9,6 +9,7 @@ const {
 } = require(`./ServerConfig.json`);
 
 const testRouter = require(`./Routes/Test.Router`);
+const actionDataRouter = require(`./Routes/ActionData.Router`);
 
 // __________________________________________________ ОБЪЕКТЫ
 const app = express();
@@ -45,3 +46,4 @@ app.use(express.json());
 
 // __________________________________________________ РОУТИНГ API
 app.use(`/api`, testRouter); // Автомобильные базы
+app.use(`/api`, actionDataRouter);
