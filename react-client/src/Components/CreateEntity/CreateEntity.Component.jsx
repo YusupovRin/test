@@ -51,7 +51,7 @@ const CreateEntityComponent = ({
               step='1'
               value={bdatetime}
               onChange={(event) => {
-                console.log(event.target.value);
+                setBDateTime(event.target.value);
               }}
             />
 
