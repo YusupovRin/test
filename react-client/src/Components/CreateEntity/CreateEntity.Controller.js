@@ -21,7 +21,7 @@ const createEntityController = async (
       text: 'Param1 должен быть числом!',
       theme: 'danger',
       autohide: true,
-      interval: 5000,
+      interval: 10000,
     });
 
     setStatusMountLoader(false);
@@ -34,7 +34,7 @@ const createEntityController = async (
       text: 'Param2 должен быть числом!',
       theme: 'danger',
       autohide: true,
-      interval: 5000,
+      interval: 10000,
     });
 
     setStatusMountLoader(false);
@@ -47,7 +47,7 @@ const createEntityController = async (
       text: 'Строка с Param3 от 1 до 30 символов (включительно).',
       theme: 'danger',
       autohide: true,
-      interval: 5000,
+      interval: 10000,
     });
 
     setStatusMountLoader(false);
@@ -73,11 +73,13 @@ const createEntityController = async (
   if (!ok && status === 400) {
     new Toast({
       title: 'Ошибка при создании сущности',
-      text: responseFetch,
+      text: responseFetch.message,
       theme: 'danger',
       autohide: true,
-      interval: 3000,
+      interval: 10000,
     });
+
+    setStatusMountLoader(false);
     return;
   }
 
